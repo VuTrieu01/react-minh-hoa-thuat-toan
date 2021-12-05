@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 const SidebarItem = props => {
 
     const active = props.active ? 'active' : ''
-
     return (
         <div className="sidebar_item">
             <div className={`sidebar_item-inner ${active}`}>
@@ -25,7 +24,6 @@ const SidebarItem = props => {
 const Sidebar = props => {
 
     const activeItem = sidebar_items.findIndex(item => item.route === props.location.pathname)
-
     return (
         <div className='sidebar'>
             <div className='sidebar_logo'>
@@ -33,7 +31,7 @@ const Sidebar = props => {
             </div>
             {
                 sidebar_items.map((item, index) => (
-                    <Link to={item.route} key={index}>
+                    <Link to={item.route} key={index} >
                         <SidebarItem
                             title={item.display_name}
                             icon={item.icon}

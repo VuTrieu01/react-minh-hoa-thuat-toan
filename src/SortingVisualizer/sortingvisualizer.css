@@ -1,0 +1,12 @@
+.main-container {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

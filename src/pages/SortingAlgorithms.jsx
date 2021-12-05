@@ -1,9 +1,10 @@
 import React from 'react'
+import SortingVisualizer from '../SortingVisualizer/SortingVisualizer'
 
 const SortingAlgorithms = () => {
     return (
         <div>
-            Trang thuật toán sắp xếp
+            <SortingVisualizer />
         </div>
     )
 }
