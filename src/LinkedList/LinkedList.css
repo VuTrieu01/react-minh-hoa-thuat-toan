@@ -1,0 +1,191 @@
+body{
+    background-color: lightblue;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 12px;
+    transition: font-size .2s ease-in;
+}
+
+a:hover{
+    font-weight: bold;
+    font-size: 14px;
+    transition: font-size .4s ease-out;
+}
+
+.linkedListMain{
+    width: 100%;
+    height: 850px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-areas:
+    " head head head head head "
+    " . ui main . . "
+    " footer footer footer footer footer";
+  }
+
+.linkedListMain .header{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    grid-area: head;
+    height: 100%;
+    width: 100%;
+    background-color: #0066FF;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: var(--main-bg);
+    transition: font-size .2s ease-in;
+}
+
+.linkedListMain .ui{
+    display: grid;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    padding-right: 20px;
+    background-color: var(--second-color-cyan);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    grid-area: ui;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.linkedListMain .ui input{
+    padding: 10px;
+    margin-right: 12px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.linkedListMain .ui button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 270px;
+    height: 150px;
+    background-color: #0066FF;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border: 2px solid #0066FF;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+#removeHead{
+    height: 50px;
+    width: 270px;
+    transition: font-size .2s ease-out;
+}
+
+.linkedListMain .ui button:hover{
+    background-color: orange;
+    border: 2px solid lightgoldenrodyellow;
+    cursor: pointer;
+    font-size: 18px;
+    transition: font-size .2s ease-out;
+    transition: background-color .2s ease-out;
+}
+
+.linkedListMain .theList{
+    padding: 10px;
+    margin-left: 10px;
+    width: 100%;
+    height: 650px;
+    background-color: var(--second-color-cyan);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    grid-area: main;
+}
+
+#action{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color-green);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.linkedListMain .theList li{
+    display: inline-block;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px;
+    width: auto;
+    margin: 10px;
+    border-radius: 5px;
+    list-style: none;
+    transition: width .2s ease-out;
+}
+
+.linkedListMain .footer{
+    display: grid;
+    grid-area: footer;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 2rem;
+    padding: 15px;
+    background-color: slategray;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 800px){
+    .linkedListMain .header{
+        font-size: 10px;
+
+        transition: font-size .2s ease-in;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .linkedListMain .ui{
+        max-width: 150px;
+        transition: max-width .2s ease-in;
+    }
+
+    .linkedListMain .ui input{
+        width: 45px;
+        transition: width .2s ease-in;
+    }
+
+    .linkedListMain .ui button{
+        transition: width .3s ease-out;
+        transition: margin-right .2s ease-out;
+    }
+
+    #removeHead{
+        width: 75px;
+        font-size: 12px;
+    }
+
+    .linkedListMain .theList th{
+        display: none;
+        transition: display .2s ease-out;
+    }
+    
+}

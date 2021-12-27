@@ -55,6 +55,13 @@
     transition: 0.3s;
   }
   
+/* chua hoan thien*/
+  .front-color-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .color-bar {
     background-color: rgba(225, 0, 120, 0.5);
     box-shadow: 5px 5px 50px 5px rgba(225, 0, 120, 0.2);

@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from '../LinkedList/Layout'
 
 const LinkedList = () => {
     return (
         <div>
-            Trang danh sách liên kết
+            <Layout />
         </div>
     )
 }

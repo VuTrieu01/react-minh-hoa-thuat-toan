@@ -51,13 +51,13 @@ export default class SortingVisualizer extends Component {
 
     // ******************************************************************************* //
 
-    // ## Handles if the "Array Size" slider is changed. ## //
+    // ## Xử lý nếu thanh trượt "Kích thước mảng" bị thay đổi. ## //
     onChangeArrayBarRangeSlider = (event, value) => {
         this.setState({ numberOfArrayBars: value });
         this.generateNewArray();
     };
 
-    // ## Handles if the "Animation Speed" slider is changed. ## //
+    // ## Xử lý nếu thanh trượt "Tốc độ hoạt ảnh" bị thay đổi. ## //
     onChangeAnimationSpeedRangeSlider = (event, value) => {
         this.setState({ animationSpeed: value });
     };
@@ -84,7 +84,7 @@ export default class SortingVisualizer extends Component {
     render() {
         return (
             <div className="main-container">
-                {/* --------------------- BUTTONS : 10% Height --------------------- */}
+                {/* --------------------- BUTTONS --------------------- */}
                 <ButtonsBar
                     generateNewArray={this.generateNewArray}
                     bubbleSort={this.bubbleSort}
@@ -92,10 +92,10 @@ export default class SortingVisualizer extends Component {
                     insertionSort={this.insertionSort}
                 />
 
-                {/* --------------------- BARS : 74% Height --------------------- */}
+                {/* --------------------- BARS --------------------- */}
                 <ArrayBar array={this.state.array} />
 
-                {/* --------------------- SLIDERS : 8% Height --------------------- */}
+                {/* --------------------- SLIDERS --------------------- */}
                 <RangeSlider
                     numberOfArrayBars={this.state.numberOfArrayBars}
                     animationSpeed={this.state.animationSpeed}
