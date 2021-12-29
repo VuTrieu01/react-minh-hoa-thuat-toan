@@ -15,23 +15,15 @@ const Introduce = () => {
                 <div className='introduce_left'>
                     <h3>Nhóm sinh viên thực hiện</h3>
                     <div className='color'>
-                        <b>Mã số sinh viên</b>
-                        <b>Họ tên</b>
+                        <b>Mã số sinh viên Họ tên</b>
                     </div>
                     <div className='thongtin'>
                         <div>
-                            <tr>6051071127</tr>
-                            <tr>6051071067</tr>
-                            <tr>6051071142</tr>
-                            <tr>6051071038</tr>
-                            <tr>6051071035</tr>
-                        </div>
-                        <div className='hoten'>
-                            <tr>Nguyễn Ngọc Vũ Triều</tr>
-                            <tr>Lê Gia Minh</tr>
-                            <tr>Nguyễn Lê Vinh</tr>
-                            <tr>Lê Trần Minh Hiền</tr>
-                            <tr>Phạm Hoàng Hải</tr>
+                            <tr>6051071127 Nguyễn Ngọc Vũ Triều</tr>
+                            <tr>6051071067 Lê Gia Minh</tr>
+                            <tr>6051071142 Nguyễn Lê Vinh</tr>
+                            <tr>6051071038 Lê Trần Minh Hiền</tr>
+                            <tr>6051071035 Phạm Hoàng Hải</tr>
                         </div>
                     </div>
                 </div>
